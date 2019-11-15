@@ -4,7 +4,7 @@
 <div class="swiper-container hero-slider">
     <div class="swiper-wrapper">
         <div class="swiper-slide hero-content-wrap">
-            <img src="{% static 'img/hero.jpg' %}" alt="">
+            <img src="{% static 'img/hero.JPG' %}" alt="">
 
             <div class="hero-content-overlay position-absolute w-100 h-100">
                 <div class="container h-100">
@@ -30,7 +30,7 @@
         </div><!-- .hero-content-wrap -->
 
         <div class="swiper-slide hero-content-wrap">
-            <img src="{% static 'img/hero.jpg' %}" alt="">
+            <img src="{% static 'img/hero.JPG' %}" alt="">
 
             <div class="hero-content-overlay position-absolute w-100 h-100">
                 <div class="container h-100">
@@ -56,7 +56,7 @@
         </div><!-- .hero-content-wrap -->
 
         <div class="swiper-slide hero-content-wrap">
-            <img src="{% static 'img/hero.jpg' %}" alt="">
+            <img src="{% static 'img/hero.JPG' %}" alt="">
 
             <div class="hero-content-overlay position-absolute w-100 h-100">
                 <div class="container h-100">
@@ -175,7 +175,7 @@
             </div><!-- .col -->
 
             <div class="col-12 col-lg-6 mt-4 order-1 order-lg-2">
-                <img src="{% static 'img/welcome.jpg' %}" alt="welcome">
+                <img src="{% static 'img/welcome.JPG' %}" alt="welcome">
             </div><!-- .col -->
         </div><!-- .row -->
     </div><!-- .container -->
@@ -183,28 +183,30 @@
 
 <div class="home-page-events">
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <div class="upcoming-events">
-                    <div class="section-heading">
-                        <h2 class="entry-title">Upcoming Events</h2>
-                    </div><!-- .section-heading -->
+                    <div class="row">
+                        <div class="coL-12">
+                            <div class="section-heading">
+                                <h2 class="entry-title">Popular Articles</h2>
+                            </div><!-- .section-heading -->
+                        </div><!-- .col -->
+                    </div>
 
-                    <div class="event-wrap d-flex flex-wrap justify-content-between">
+                    <div class="row featured-articles">
+                    <div class="col-md-4 event-wrap">
                         <figure class="m-0">
                             <img src="{% static 'img/event-1.jpg' %}" alt="">
                         </figure>
 
-                        <div class="event-content-wrap">
+                        <div class="event-content-wrap mt-2">
                             <header class="entry-header d-flex flex-wrap align-items-center">
-                                <h3 class="entry-title w-100 m-0"><a href="#">Fundraiser for Kids</a></h3>
+                                <h3 class="entry-title w-100 m-0"><a href="#">5G The Future</a></h3>
 
                                 <div class="posted-date">
                                     <a href="#">Aug 25, 2018 </a>
                                 </div><!-- .posted-date -->
 
                                 <div class="cats-links">
-                                    <a href="#">Ball Room New York</a>
+                                    <a href="#">Steve Eliot</a>
                                 </div><!-- .cats-links -->
                             </header><!-- .entry-header -->
 
@@ -218,21 +220,21 @@
                         </div><!-- .event-content-wrap -->
                     </div><!-- .event-wrap -->
 
-                    <div class="event-wrap d-flex flex-wrap justify-content-between">
+                    <div class="col-md-4 event-wrap">
                         <figure class="m-0">
                             <img src="{% static 'img/event-2.jpg' %}" alt="">
                         </figure>
 
-                        <div class="event-content-wrap">
+                        <div class="event-content-wrap mt-2">
                             <header class="entry-header d-flex flex-wrap align-items-center">
-                                <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
+                                <h3 class="entry-title w-100 m-0"><a href="#">Machine Learning in Construction</a></h3>
 
                                 <div class="posted-date">
                                     <a href="#">Aug 25, 2018 </a>
                                 </div><!-- .posted-date -->
 
                                 <div class="cats-links">
-                                    <a href="#">Ball Room New York</a>
+                                    <a href="#">Mary Jane</a>
                                 </div><!-- .cats-links -->
                             </header><!-- .entry-header -->
 
@@ -246,21 +248,21 @@
                         </div><!-- .event-content-wrap -->
                     </div><!-- .event-wrap -->
 
-                    <div class="event-wrap d-flex flex-wrap justify-content-between">
+                    <div class="col-md-4 event-wrap">
                         <figure class="m-0">
                             <img src="{% static 'img/event-3.jpg' %}" alt="">
                         </figure>
 
-                        <div class="event-content-wrap">
+                        <div class="event-content-wrap mt-2">
                             <header class="entry-header d-flex flex-wrap align-items-center">
-                                <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
+                                <h3 class="entry-title w-100 m-0"><a href="#">Engineering Ethics: A Corrupt World</a></h3>
 
                                 <div class="posted-date">
                                     <a href="#">Aug 25, 2018 </a>
                                 </div><!-- .posted-date -->
 
                                 <div class="cats-links">
-                                    <a href="#">Ball Room New York</a>
+                                    <a href="#">James Doe</a>
                                 </div><!-- .cats-links -->
                             </header><!-- .entry-header -->
 
@@ -273,65 +275,8 @@
                             </div><!-- .entry-footer -->
                         </div><!-- .event-content-wrap -->
                     </div><!-- .event-wrap -->
-                </div><!-- .upcoming-events -->
-            </div><!-- .col -->
-
-            <div class="col-12 col-lg-6">
-                <div class="featured-cause">
-                    <div class="section-heading">
-                        <h2 class="entry-title">Featured Cause</h2>
-                    </div><!-- .section-heading -->
-
-                    <div class="cause-wrap d-flex flex-wrap justify-content-between">
-                        <figure class="m-0">
-                            <img src="{% static 'img/featured-causes.jpg' %}" alt="">
-                        </figure>
-
-                        <div class="cause-content-wrap">
-                            <header class="entry-header d-flex flex-wrap align-items-center">
-                                <h3 class="entry-title w-100 m-0"><a href="#">Fundraiser for Kids</a></h3>
-
-                                <div class="posted-date">
-                                    <a href="#">Aug 25, 2018 </a>
-                                </div><!-- .posted-date -->
-
-                                <div class="cats-links">
-                                    <a href="#">Ball Room New York</a>
-                                </div><!-- .cats-links -->
-                            </header><!-- .entry-header -->
-
-                            <div class="entry-content">
-                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris. Lorem ipsum dolor sit amet, consectetur.</p>
-                            </div><!-- .entry-content -->
-
-                            <div class="entry-footer mt-5">
-                                <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
-                            </div><!-- .entry-footer -->
-                        </div><!-- .cause-content-wrap -->
-
-                        <div class="fund-raised w-100">
-                            <div class="featured-fund-raised-bar barfiller">
-                                <div class="tipWrap">
-                                    <span class="tip"></span>
-                                </div><!-- .tipWrap -->
-
-                                <span class="fill" data-percentage="83"></span>
-                            </div><!-- .fund-raised-bar -->
-
-                            <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                <div class="fund-raised-total mt-4">
-                                    Raised: $56 880
-                                </div><!-- .fund-raised-total -->
-
-                                <div class="fund-raised-goal mt-4">
-                                    Goal: $70 000
-                                </div><!-- .fund-raised-goal -->
-                            </div><!-- .fund-raised-details -->
-                        </div><!-- .fund-raised -->
-                    </div><!-- .cause-wrap -->
-                </div><!-- .featured-cause -->
-            </div><!-- .col -->
-        </div><!-- .row -->
+                
+        </div><!-- .row --><!-- .featutured-articles -->
     </div><!-- .container -->
 </div><!-- .home-page-events -->
 
@@ -340,7 +285,169 @@
         <div class="row">
             <div class="coL-12">
                 <div class="section-heading">
-                    <h2 class="entry-title">Our Causes</h2>
+                    <h2 class="entry-title">Our Teams</h2>
+                </div><!-- .section-heading -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12">
+                <div class="swiper-container causes-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/team-1.JPG' %}" alt="">
+
+                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
+                                    </div><!-- .figure-overlay -->
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Electrical Department</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/team-2.JPG' %}" alt="">
+
+                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
+                                    </div><!-- .figure-overlay -->
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Civil Department</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/team-3.JPG' %}" alt="">
+
+                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
+                                    </div><!-- .figure-overlay -->
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Mechanical Department</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/team-4.JPG' %}" alt="">
+
+                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
+                                    </div><!-- .figure-overlay -->
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Aerospace Department</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/team-5.JPG' %}" alt="">
+
+                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                        <a href="#" class="btn gradient-bg mr-2">Biosystems</a>
+                                    </div><!-- .figure-overlay -->
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Biosystems Department</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/team-6.JPG' %}" alt="">
+
+                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
+                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
+                                    </div><!-- .figure-overlay -->
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">CIT Department</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+                    </div><!-- .swiper-wrapper -->
+
+                </div><!-- .swiper-container -->
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next flex justify-content-center align-items-center">
+                    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+                </div>
+
+                <div class="swiper-button-prev flex justify-content-center align-items-center">
+                    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+                </div>
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .our-causes -->
+
+<div class="our-causes">
+    <div class="container">
+        <div class="row">
+            <div class="coL-12">
+                <div class="section-heading">
+                    <h2 class="entry-title">Featured Projects</h2>
                 </div><!-- .section-heading -->
             </div><!-- .col -->
         </div><!-- .row -->
@@ -355,38 +462,18 @@
                                     <img src="{% static 'img/cause-1.jpg' %}" alt="">
 
                                     <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
                                     </div><!-- .figure-overlay -->
                                 </figure>
 
                                 <div class="cause-content-wrap">
                                     <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Electrical Department</a></h3>
                                     </header><!-- .entry-header -->
 
                                     <div class="entry-content">
                                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
                                     </div><!-- .entry-content -->
-
-                                    <div class="fund-raised w-100">
-                                        <div class="fund-raised-bar-1 barfiller">
-                                            <div class="tipWrap">
-                                                <span class="tip"></span>
-                                            </div><!-- .tipWrap -->
-
-                                            <span class="fill" data-percentage="83"></span>
-                                        </div><!-- .fund-raised-bar -->
-
-                                        <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                            <div class="fund-raised-total mt-4">
-                                                Raised: $56 880
-                                            </div><!-- .fund-raised-total -->
-
-                                            <div class="fund-raised-goal mt-4">
-                                                Goal: $70 000
-                                            </div><!-- .fund-raised-goal -->
-                                        </div><!-- .fund-raised-details -->
-                                    </div><!-- .fund-raised -->
                                 </div><!-- .cause-content-wrap -->
                             </div><!-- .cause-wrap -->
                         </div><!-- .swiper-slide -->
@@ -397,38 +484,18 @@
                                     <img src="{% static 'img/cause-2.jpg' %}" alt="">
 
                                     <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
                                     </div><!-- .figure-overlay -->
                                 </figure>
 
                                 <div class="cause-content-wrap">
                                     <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Education for all</a></h3>
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Civil Department</a></h3>
                                     </header><!-- .entry-header -->
 
                                     <div class="entry-content">
                                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
                                     </div><!-- .entry-content -->
-
-                                    <div class="fund-raised w-100">
-                                        <div class="fund-raised-bar-2 barfiller">
-                                            <div class="tipWrap">
-                                                <span class="tip"></span>
-                                            </div><!-- .tipWrap -->
-
-                                            <span class="fill" data-percentage="70"></span>
-                                        </div><!-- .fund-raised-bar -->
-
-                                        <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                            <div class="fund-raised-total mt-4">
-                                                Raised: $56 880
-                                            </div><!-- .fund-raised-total -->
-
-                                            <div class="fund-raised-goal mt-4">
-                                                Goal: $70 000
-                                            </div><!-- .fund-raised-goal -->
-                                        </div><!-- .fund-raised-details -->
-                                    </div><!-- .fund-raised -->
                                 </div><!-- .cause-content-wrap -->
                             </div><!-- .cause-wrap -->
                         </div><!-- .swiper-slide -->
@@ -439,38 +506,18 @@
                                     <img src="{% static 'img/cause-3.jpg' %}" alt="">
 
                                     <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
                                     </div><!-- .figure-overlay -->
                                 </figure>
 
                                 <div class="cause-content-wrap">
                                     <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Mechanical Department</a></h3>
                                     </header><!-- .entry-header -->
 
                                     <div class="entry-content">
                                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
                                     </div><!-- .entry-content -->
-
-                                    <div class="fund-raised w-100">
-                                        <div class="fund-raised-bar-3 barfiller">
-                                            <div class="tipWrap">
-                                                <span class="tip"></span>
-                                            </div><!-- .tipWrap -->
-
-                                            <span class="fill" data-percentage="83"></span>
-                                        </div><!-- .fund-raised-bar -->
-
-                                        <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                            <div class="fund-raised-total mt-4">
-                                                Raised: $56 880
-                                            </div><!-- .fund-raised-total -->
-
-                                            <div class="fund-raised-goal mt-4">
-                                                Goal: $70 000
-                                            </div><!-- .fund-raised-goal -->
-                                        </div><!-- .fund-raised-details -->
-                                    </div><!-- .fund-raised -->
                                 </div><!-- .cause-content-wrap -->
                             </div><!-- .cause-wrap -->
                         </div><!-- .swiper-slide -->
@@ -481,38 +528,18 @@
                                     <img src="{% static 'img/cause-1.jpg' %}" alt="">
 
                                     <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
                                     </div><!-- .figure-overlay -->
                                 </figure>
 
                                 <div class="cause-content-wrap">
                                     <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Aerospace Department</a></h3>
                                     </header><!-- .entry-header -->
 
                                     <div class="entry-content">
                                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
                                     </div><!-- .entry-content -->
-
-                                    <div class="fund-raised w-100">
-                                        <div class="fund-raised-bar-4 barfiller">
-                                            <div class="tipWrap">
-                                                <span class="tip"></span>
-                                            </div><!-- .tipWrap -->
-
-                                            <span class="fill" data-percentage="83"></span>
-                                        </div><!-- .fund-raised-bar -->
-
-                                        <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                            <div class="fund-raised-total mt-4">
-                                                Raised: $56 880
-                                            </div><!-- .fund-raised-total -->
-
-                                            <div class="fund-raised-goal mt-4">
-                                                Goal: $70 000
-                                            </div><!-- .fund-raised-goal -->
-                                        </div><!-- .fund-raised-details -->
-                                    </div><!-- .fund-raised -->
                                 </div><!-- .cause-content-wrap -->
                             </div><!-- .cause-wrap -->
                         </div><!-- .swiper-slide -->
@@ -523,38 +550,18 @@
                                     <img src="{% static 'img/cause-2.jpg' %}" alt="">
 
                                     <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+                                        <a href="#" class="btn gradient-bg mr-2">Biosystems</a>
                                     </div><!-- .figure-overlay -->
                                 </figure>
 
                                 <div class="cause-content-wrap">
                                     <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Education for all</a></h3>
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Biosystems Department</a></h3>
                                     </header><!-- .entry-header -->
 
                                     <div class="entry-content">
                                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
                                     </div><!-- .entry-content -->
-
-                                    <div class="fund-raised w-100">
-                                        <div class="fund-raised-bar-5 barfiller">
-                                            <div class="tipWrap">
-                                                <span class="tip"></span>
-                                            </div><!-- .tipWrap -->
-
-                                            <span class="fill" data-percentage="70"></span>
-                                        </div><!-- .fund-raised-bar -->
-
-                                        <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                            <div class="fund-raised-total mt-4">
-                                                Raised: $56 880
-                                            </div><!-- .fund-raised-total -->
-
-                                            <div class="fund-raised-goal mt-4">
-                                                Goal: $70 000
-                                            </div><!-- .fund-raised-goal -->
-                                        </div><!-- .fund-raised-details -->
-                                    </div><!-- .fund-raised -->
                                 </div><!-- .cause-content-wrap -->
                             </div><!-- .cause-wrap -->
                         </div><!-- .swiper-slide -->
@@ -565,38 +572,156 @@
                                     <img src="{% static 'img/cause-3.jpg' %}" alt="">
 
                                     <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Donate Now</a>
+                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
                                     </div><!-- .figure-overlay -->
                                 </figure>
 
                                 <div class="cause-content-wrap">
                                     <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Bring water to the childrens</a></h3>
+                                        <h3 class="entry-title w-100 m-0"><a href="#">CIT Department</a></h3>
                                     </header><!-- .entry-header -->
 
                                     <div class="entry-content">
                                         <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
                                     </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+                    </div><!-- .swiper-wrapper -->
 
-                                    <div class="fund-raised w-100">
-                                        <div class="fund-raised-bar-6 barfiller">
-                                            <div class="tipWrap">
-                                                <span class="tip"></span>
-                                            </div><!-- .tipWrap -->
+                </div><!-- .swiper-container -->
 
-                                            <span class="fill" data-percentage="83"></span>
-                                        </div><!-- .fund-raised-bar -->
+                <!-- Add Arrows -->
+                <div class="swiper-button-next flex justify-content-center align-items-center">
+                    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1171 960q0 13-10 23l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23z"/></svg></span>
+                </div>
 
-                                        <div class="fund-raised-details d-flex flex-wrap justify-content-between align-items-center">
-                                            <div class="fund-raised-total mt-4">
-                                                Raised: $56 880
-                                            </div><!-- .fund-raised-total -->
+                <div class="swiper-button-prev flex justify-content-center align-items-center">
+                    <span><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1203 544q0 13-10 23l-393 393 393 393q10 10 10 23t-10 23l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg></span>
+                </div>
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .our-causes -->
 
-                                            <div class="fund-raised-goal mt-4">
-                                                Goal: $70 000
-                                            </div><!-- .fund-raised-goal -->
-                                        </div><!-- .fund-raised-details -->
-                                    </div><!-- .fund-raised -->
+<div class="our-causes">
+    <div class="container">
+        <div class="row">
+            <div class="coL-12">
+                <div class="section-heading">
+                    <h2 class="entry-title">Notable Members</h2>
+                </div><!-- .section-heading -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+
+        <div class="row">
+            <div class="col-12">
+                <div class="swiper-container causes-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/cause-1.jpg' %}" alt="">
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Stephen Hawking</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/cause-2.jpg' %}" alt="">
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Bill Gates</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/cause-3.jpg' %}" alt="">
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Mark Zuckerberg</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/cause-1.jpg' %}" alt="">
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Elon Musk</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/cause-2.jpg' %}" alt="">
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Eric Odhiambo</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
+                                </div><!-- .cause-content-wrap -->
+                            </div><!-- .cause-wrap -->
+                        </div><!-- .swiper-slide -->
+
+                        <div class="swiper-slide">
+                            <div class="cause-wrap">
+                                <figure class="m-0">
+                                    <img src="{% static 'img/cause-3.jpg' %}" alt="">
+                                </figure>
+
+                                <div class="cause-content-wrap">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3 class="entry-title w-100 m-0"><a href="#">Barack Obama</a></h3>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content">
+                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                    </div><!-- .entry-content -->
                                 </div><!-- .cause-content-wrap -->
                             </div><!-- .cause-wrap -->
                         </div><!-- .swiper-slide -->
@@ -622,7 +747,7 @@
         <div class="row align-items-end">
             <div class="coL-12 col-lg-6">
                 <div class="section-heading">
-                    <h2 class="entry-title">We love to help all the children that have problems in the world. After 15 years we have many goals achieved.</h2>
+                    <h2 class="entry-title">We love making theory practical. After 4 years we have many goals achieved.</h2>
 
                     <p class="mt-5">Dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris quis aliquam. Lorem ipsum dolor sit amet.</p>
                 </div><!-- .section-heading -->
@@ -637,8 +762,7 @@
                             </div>
 
                             <div class="d-flex justify-content-center align-items-baseline">
-                                <div class="start-counter" data-to="120" data-speed="2000"></div>
-                                <div class="counter-k">K</div>
+                                <div class="start-counter" data-to="40" data-speed="2000"></div>
                             </div>
 
                             <h3 class="entry-title">Projects Done</h3><!-- entry-title -->
@@ -652,7 +776,7 @@
                             </div>
 
                             <div class="d-flex justify-content-center align-items-baseline">
-                                <div class="start-counter" data-to="79" data-speed="2000"></div>
+                                <div class="start-counter" data-to="15" data-speed="2000"></div>
                             </div>
 
                             <h3 class="entry-title">Research Papers</h3><!-- entry-title -->
@@ -666,7 +790,7 @@
                             </div>
 
                             <div class="d-flex justify-content-center align-items-baseline">
-                                <div class="start-counter" data-to="253" data-speed="2000"></div>
+                                <div class="start-counter" data-to="1" data-speed="2000"></div>
                             </div>
 
                             <h3 class="entry-title">Industries Visited</h3><!-- entry-title -->
@@ -701,19 +825,19 @@
                     <h2>Useful Links</h2>
 
                     <ul>
-                        <li><a href="#">Privacy Polticy</a></li>
-                        <li><a href="#">Become  a Volunteer</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Join Us</a></li>
                         <li><a href="#">Donate</a></li>
                         <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Causes</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">News</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Research Papers</a></li>
+                        <li><a href="#">Articles</a></li>
                     </ul>
                 </div><!-- .col -->
 
                 <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
                     <div class="foot-latest-news">
-                        <h2>Latest News</h2>
+                        <h2>Latest Articles</h2>
 
                         <ul>
                             <li>
@@ -739,7 +863,7 @@
                         <h2>Contact</h2>
 
                         <ul>
-                            <li><i class="fa fa-phone"></i><span>+45 677 8993000 223</span></li>
+                            <li><i class="fa fa-phone"></i><span>+254 741 924065</span></li>
                             <li><i class="fa fa-envelope"></i><span>thepivotclub@gmail.com</span></li>
                             <li><i class="fa fa-map-marker"></i><span>Kenyatta University, Nairobi.</span></li>
                         </ul>

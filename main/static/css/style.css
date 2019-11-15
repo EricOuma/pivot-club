@@ -843,7 +843,7 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .event-wrap figure {
-    width: 144px;
+    width: auto;
     height: auto;
 }
 
@@ -853,7 +853,6 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .event-content-wrap {
-    width: calc(100% - 180px);
     margin-top: -10px;
 }
 
