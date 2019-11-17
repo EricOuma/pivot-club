@@ -19,4 +19,7 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
+    path('accounts/', include('accounts.urls')),
+    path('blog/', include('blog.urls')),
 ]
+# Rememner to up signup/signin/signout in main app that redirect to acount aop
