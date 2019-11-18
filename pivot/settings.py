@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
-import os
+import cloudinary, os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'accounts',
     'main',
     'blog',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+cloudinary.config( 
+  cloud_name = "ericouma", 
+  api_key = "272724916455615", 
+  api_secret = "a3d1T3zp37J0jJLUoPvXv6yHQH0" 
+)

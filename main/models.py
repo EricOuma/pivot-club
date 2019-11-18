@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -7,6 +8,7 @@ from django.contrib.auth.models import User
 class Team(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
+    photo = CloudinaryField('image', null=True)
 
     def __str__(self):
         return self.name
@@ -34,6 +36,7 @@ class ResearchPaper(models.Model):
 class Gallery(models.Model):
     caption = models.CharField(max_length=100)
     description = models.TextField()
+    photo = CloudinaryField('image', null=True)
 
     def __str__(self):
         return self.caption
