@@ -192,89 +192,35 @@
                     </div>
 
                     <div class="row featured-articles">
+                        {% for article in articles %}
                     <div class="col-md-4 event-wrap">
                         <figure class="m-0">
-                            <img src="{% static 'img/event-1.jpg' %}" alt="">
+                            <img src="{{ article.photo.url }}" alt="">
                         </figure>
 
                         <div class="event-content-wrap mt-2">
                             <header class="entry-header d-flex flex-wrap align-items-center">
-                                <h3 class="entry-title w-100 m-0"><a href="#">5G The Future</a></h3>
+                                <h3 class="entry-title w-100 m-0"><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></h3>
 
                                 <div class="posted-date">
-                                    <a href="#">Aug 25, 2018 </a>
+                                    <span>{{ article.created_on.date }}</span>
                                 </div><!-- .posted-date -->
 
                                 <div class="cats-links">
-                                    <a href="#">Steve Eliot</a>
+                                    <a href="{{ article.author.get_absolute_url }}">{{ article.author }}</a>
                                 </div><!-- .cats-links -->
                             </header><!-- .entry-header -->
 
                             <div class="entry-content">
-                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                <p class="m-0 text-truncate">{{ article.body }}</p>
                             </div><!-- .entry-content -->
 
                             <div class="entry-footer">
-                                <a href="#">Read More</a>
+                                <a href="{{ article.get_absolute_url }}">Read More</a>
                             </div><!-- .entry-footer -->
                         </div><!-- .event-content-wrap -->
                     </div><!-- .event-wrap -->
-
-                    <div class="col-md-4 event-wrap">
-                        <figure class="m-0">
-                            <img src="{% static 'img/event-2.jpg' %}" alt="">
-                        </figure>
-
-                        <div class="event-content-wrap mt-2">
-                            <header class="entry-header d-flex flex-wrap align-items-center">
-                                <h3 class="entry-title w-100 m-0"><a href="#">Machine Learning in Construction</a></h3>
-
-                                <div class="posted-date">
-                                    <a href="#">Aug 25, 2018 </a>
-                                </div><!-- .posted-date -->
-
-                                <div class="cats-links">
-                                    <a href="#">Mary Jane</a>
-                                </div><!-- .cats-links -->
-                            </header><!-- .entry-header -->
-
-                            <div class="entry-content">
-                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                            </div><!-- .entry-content -->
-
-                            <div class="entry-footer">
-                                <a href="#">Read More</a>
-                            </div><!-- .entry-footer -->
-                        </div><!-- .event-content-wrap -->
-                    </div><!-- .event-wrap -->
-
-                    <div class="col-md-4 event-wrap">
-                        <figure class="m-0">
-                            <img src="{% static 'img/event-3.jpg' %}" alt="">
-                        </figure>
-
-                        <div class="event-content-wrap mt-2">
-                            <header class="entry-header d-flex flex-wrap align-items-center">
-                                <h3 class="entry-title w-100 m-0"><a href="#">Engineering Ethics: A Corrupt World</a></h3>
-
-                                <div class="posted-date">
-                                    <a href="#">Aug 25, 2018 </a>
-                                </div><!-- .posted-date -->
-
-                                <div class="cats-links">
-                                    <a href="#">James Doe</a>
-                                </div><!-- .cats-links -->
-                            </header><!-- .entry-header -->
-
-                            <div class="entry-content">
-                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                            </div><!-- .entry-content -->
-
-                            <div class="entry-footer">
-                                <a href="#">Read More</a>
-                            </div><!-- .entry-footer -->
-                        </div><!-- .event-content-wrap -->
-                    </div><!-- .event-wrap -->
+                    {% endfor %}
                 
         </div><!-- .row --><!-- .featutured-articles -->
     </div><!-- .container -->
@@ -294,10 +240,11 @@
             <div class="col-12">
                 <div class="swiper-container causes-slider">
                     <div class="swiper-wrapper">
+                        {% for team in teams %}
                         <div class="swiper-slide">
                             <div class="cause-wrap">
                                 <figure class="m-0">
-                                    <img src="{% static 'img/team-1.JPG' %}" alt="">
+                                    <img src="{{ team.photo.url }}" alt="">
 
                                     <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
                                         <a href="#" class="btn gradient-bg mr-2">Join Now</a>
@@ -306,125 +253,16 @@
 
                                 <div class="cause-content-wrap">
                                     <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Electrical Department</a></h3>
+                                        <h3 class="entry-title w-100 m-0"><a href="#">{{ team.name }}</a></h3>
                                     </header><!-- .entry-header -->
 
                                     <div class="entry-content">
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                        <p class="m-0">{{ team.description }}</p>
                                     </div><!-- .entry-content -->
                                 </div><!-- .cause-content-wrap -->
                             </div><!-- .cause-wrap -->
                         </div><!-- .swiper-slide -->
-
-                        <div class="swiper-slide">
-                            <div class="cause-wrap">
-                                <figure class="m-0">
-                                    <img src="{% static 'img/team-2.JPG' %}" alt="">
-
-                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
-                                    </div><!-- .figure-overlay -->
-                                </figure>
-
-                                <div class="cause-content-wrap">
-                                    <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Civil Department</a></h3>
-                                    </header><!-- .entry-header -->
-
-                                    <div class="entry-content">
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                    </div><!-- .entry-content -->
-                                </div><!-- .cause-content-wrap -->
-                            </div><!-- .cause-wrap -->
-                        </div><!-- .swiper-slide -->
-
-                        <div class="swiper-slide">
-                            <div class="cause-wrap">
-                                <figure class="m-0">
-                                    <img src="{% static 'img/team-3.JPG' %}" alt="">
-
-                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
-                                    </div><!-- .figure-overlay -->
-                                </figure>
-
-                                <div class="cause-content-wrap">
-                                    <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Mechanical Department</a></h3>
-                                    </header><!-- .entry-header -->
-
-                                    <div class="entry-content">
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                    </div><!-- .entry-content -->
-                                </div><!-- .cause-content-wrap -->
-                            </div><!-- .cause-wrap -->
-                        </div><!-- .swiper-slide -->
-
-                        <div class="swiper-slide">
-                            <div class="cause-wrap">
-                                <figure class="m-0">
-                                    <img src="{% static 'img/team-4.JPG' %}" alt="">
-
-                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
-                                    </div><!-- .figure-overlay -->
-                                </figure>
-
-                                <div class="cause-content-wrap">
-                                    <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Aerospace Department</a></h3>
-                                    </header><!-- .entry-header -->
-
-                                    <div class="entry-content">
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                    </div><!-- .entry-content -->
-                                </div><!-- .cause-content-wrap -->
-                            </div><!-- .cause-wrap -->
-                        </div><!-- .swiper-slide -->
-
-                        <div class="swiper-slide">
-                            <div class="cause-wrap">
-                                <figure class="m-0">
-                                    <img src="{% static 'img/team-5.JPG' %}" alt="">
-
-                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Biosystems</a>
-                                    </div><!-- .figure-overlay -->
-                                </figure>
-
-                                <div class="cause-content-wrap">
-                                    <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Biosystems Department</a></h3>
-                                    </header><!-- .entry-header -->
-
-                                    <div class="entry-content">
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                    </div><!-- .entry-content -->
-                                </div><!-- .cause-content-wrap -->
-                            </div><!-- .cause-wrap -->
-                        </div><!-- .swiper-slide -->
-
-                        <div class="swiper-slide">
-                            <div class="cause-wrap">
-                                <figure class="m-0">
-                                    <img src="{% static 'img/team-6.JPG' %}" alt="">
-
-                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
-                                    </div><!-- .figure-overlay -->
-                                </figure>
-
-                                <div class="cause-content-wrap">
-                                    <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">CIT Department</a></h3>
-                                    </header><!-- .entry-header -->
-
-                                    <div class="entry-content">
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                    </div><!-- .entry-content -->
-                                </div><!-- .cause-content-wrap -->
-                            </div><!-- .cause-wrap -->
-                        </div><!-- .swiper-slide -->
+                        {% endfor %}
                     </div><!-- .swiper-wrapper -->
 
                 </div><!-- .swiper-container -->
@@ -456,137 +294,29 @@
             <div class="col-12">
                 <div class="swiper-container causes-slider">
                     <div class="swiper-wrapper">
+                        {% for project in projects %}
                         <div class="swiper-slide">
                             <div class="cause-wrap">
                                 <figure class="m-0">
-                                    <img src="{% static 'img/cause-1.jpg' %}" alt="">
+                                    <img src="{{ project.photo.url }}" alt="">
 
                                     <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
+                                        <a href="{{ project.get_absolute_url }}" class="btn gradient-bg mr-2">Read More</a>
                                     </div><!-- .figure-overlay -->
                                 </figure>
 
                                 <div class="cause-content-wrap">
                                     <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Electrical Department</a></h3>
+                                        <h3 class="entry-title w-100 m-0"><a href="#">{{ project.name }}</a></h3>
                                     </header><!-- .entry-header -->
 
                                     <div class="entry-content">
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
+                                        <p class="m-0 text-truncate">{{ project.description }}</p>
                                     </div><!-- .entry-content -->
                                 </div><!-- .cause-content-wrap -->
                             </div><!-- .cause-wrap -->
                         </div><!-- .swiper-slide -->
-
-                        <div class="swiper-slide">
-                            <div class="cause-wrap">
-                                <figure class="m-0">
-                                    <img src="{% static 'img/cause-2.jpg' %}" alt="">
-
-                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
-                                    </div><!-- .figure-overlay -->
-                                </figure>
-
-                                <div class="cause-content-wrap">
-                                    <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Civil Department</a></h3>
-                                    </header><!-- .entry-header -->
-
-                                    <div class="entry-content">
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                    </div><!-- .entry-content -->
-                                </div><!-- .cause-content-wrap -->
-                            </div><!-- .cause-wrap -->
-                        </div><!-- .swiper-slide -->
-
-                        <div class="swiper-slide">
-                            <div class="cause-wrap">
-                                <figure class="m-0">
-                                    <img src="{% static 'img/cause-3.jpg' %}" alt="">
-
-                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
-                                    </div><!-- .figure-overlay -->
-                                </figure>
-
-                                <div class="cause-content-wrap">
-                                    <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Mechanical Department</a></h3>
-                                    </header><!-- .entry-header -->
-
-                                    <div class="entry-content">
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                    </div><!-- .entry-content -->
-                                </div><!-- .cause-content-wrap -->
-                            </div><!-- .cause-wrap -->
-                        </div><!-- .swiper-slide -->
-
-                        <div class="swiper-slide">
-                            <div class="cause-wrap">
-                                <figure class="m-0">
-                                    <img src="{% static 'img/cause-1.jpg' %}" alt="">
-
-                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
-                                    </div><!-- .figure-overlay -->
-                                </figure>
-
-                                <div class="cause-content-wrap">
-                                    <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Aerospace Department</a></h3>
-                                    </header><!-- .entry-header -->
-
-                                    <div class="entry-content">
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                    </div><!-- .entry-content -->
-                                </div><!-- .cause-content-wrap -->
-                            </div><!-- .cause-wrap -->
-                        </div><!-- .swiper-slide -->
-
-                        <div class="swiper-slide">
-                            <div class="cause-wrap">
-                                <figure class="m-0">
-                                    <img src="{% static 'img/cause-2.jpg' %}" alt="">
-
-                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Biosystems</a>
-                                    </div><!-- .figure-overlay -->
-                                </figure>
-
-                                <div class="cause-content-wrap">
-                                    <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">Biosystems Department</a></h3>
-                                    </header><!-- .entry-header -->
-
-                                    <div class="entry-content">
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                    </div><!-- .entry-content -->
-                                </div><!-- .cause-content-wrap -->
-                            </div><!-- .cause-wrap -->
-                        </div><!-- .swiper-slide -->
-
-                        <div class="swiper-slide">
-                            <div class="cause-wrap">
-                                <figure class="m-0">
-                                    <img src="{% static 'img/cause-3.jpg' %}" alt="">
-
-                                    <div class="figure-overlay d-flex justify-content-center align-items-center position-absolute w-100 h-100">
-                                        <a href="#" class="btn gradient-bg mr-2">Join Now</a>
-                                    </div><!-- .figure-overlay -->
-                                </figure>
-
-                                <div class="cause-content-wrap">
-                                    <header class="entry-header d-flex flex-wrap align-items-center">
-                                        <h3 class="entry-title w-100 m-0"><a href="#">CIT Department</a></h3>
-                                    </header><!-- .entry-header -->
-
-                                    <div class="entry-content">
-                                        <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestib ulum mauris.</p>
-                                    </div><!-- .entry-content -->
-                                </div><!-- .cause-content-wrap -->
-                            </div><!-- .cause-wrap -->
-                        </div><!-- .swiper-slide -->
+                        {% endfor %}
                     </div><!-- .swiper-wrapper -->
 
                 </div><!-- .swiper-container -->

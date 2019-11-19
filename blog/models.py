@@ -1,4 +1,5 @@
 from django.db import models
+from django.shortcuts import reverse
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
@@ -16,4 +17,4 @@ class Article(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('', args=[str(self.id)])
+        return reverse('article-detail', args=[str(self.id)])
