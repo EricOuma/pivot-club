@@ -136,3 +136,6 @@ cloudinary.config(
   api_key = "272724916455615", 
   api_secret = "a3d1T3zp37J0jJLUoPvXv6yHQH0" 
 )
+
+import dj_database_url
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
