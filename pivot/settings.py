@@ -25,7 +25,7 @@ SECRET_KEY = '%$tl3s@@2-4$$+f4+)k4e(c$kix2hh+iz#7+3%#$-0b0t7r$wv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['afternoon-citadel-78534.herokuapp.com']
 
 
 # Application definition
